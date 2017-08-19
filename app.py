@@ -4,7 +4,8 @@ from flask import Flask, render_template, request, redirect, url_for, send_from_
 from werkzeug import secure_filename
 app = Flask(__name__)
 
-UPLOAD_FOLDER = './uploads'
+#UPLOAD_FOLDER = './uploads'
+UPLOAD_FOLDER = 'https://github.com/takahiromorita/heroku-python-flask4/uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'gif', 'PNG', 'JPG'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['SECRET_KEY'] = os.urandom(24)
